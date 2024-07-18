@@ -1,7 +1,7 @@
 Backend yang membantu untuk merubah Google Map Shorten link menjadi Coordinate
 
 
-"""
+'''
 // 20240718150830
 // https://backend.nael.my.id/api/get-coordinates?url=https://maps.app.goo.gl/FgnjaF3ohqmAaMhs7
 
@@ -12,4 +12,5 @@ Backend yang membantu untuk merubah Google Map Shorten link menjadi Coordinate
     "lng": 110.5055499
   }
 }
-"""
+
+'''
