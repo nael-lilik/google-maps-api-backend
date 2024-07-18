@@ -16,7 +16,7 @@ app.get('/api/get-coordinates', async (req, res) => {
   const { url } = req.query;
 
   try {
-    const response = await fetch(url, { redirect: 'manual' });
+    const response = await fetch(url, {  });
     if (response.ok) {
       const finalUrl = response.url;
       console.log('Final URL:', finalUrl);
@@ -31,7 +31,6 @@ app.get('/api/get-coordinates', async (req, res) => {
         res.status(400).json({ success: false, message: 'URL tidak valid atau tidak mengandung koordinat.' });
       }
     } else {
-        console.log(response.url)
       res.status(response.status).json({ success: false, message: 'Gagal mengambil URL akhir.' });
     }
   } catch (error) {
